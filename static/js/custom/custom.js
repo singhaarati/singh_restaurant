@@ -1,1 +1,1 @@
-console.log("Linked js file")
+console.log("Linked js file");
