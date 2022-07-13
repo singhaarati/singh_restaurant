@@ -1,189 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     {% load static %}
-    <link rel= "stylesheet" href="{% static 'css/custom/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/custom/style.css' %}" />
+    <script src="{% static 'js/custom/custom.js' %}"></script>
 </head>
+
 <body>
     <header class="header">
         <section class="flex">
             <a href="#home" class="logo"><img src="{% static 'images/Logo/website_logo.jpg'%}" alt=""></a>
             <nav class="navbar">
-              <a href="#home">Home</a>
-              <a href="#home" >About Us</a>  
-              <a href="#home">Menu</a>
-              <!-- <a href="#home">Contact</a> -->
+                <a href="#home">Home</a>
+                <a href="#home">About Us</a>
+                <a href="#home">Menu</a>
             </nav>
 
-            <!-- <div class="login">
-                <button class="main=login">
-                    <a href="#"> Log In</a>
-                    <a href="#">Register</a>
-                </button>
-            </div> -->
+            <div class="dropdown">
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            </div>
+            
+
 
             <div id="menu-btn" class="fas fa-bars"></div>
-         </section>
+
+
+        </section>
+
+
     </header>
 
     <!-- home section start -->
-    
+
     <div class="home-bg">
         <section class="home" id="home">
+            <img src="{% static 'images/about/about.jpg'%}" alt="">
             <div class="content">
                 <h3>Singh Restaurant </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nobis rem qui quae, laboriosam nemo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nobis rem qui quae, laboriosam nemo?
+                </p>
                 <a href="#about" class="btn">About Us</a>
             </div>
         </section>
-        
-    </div>
-<!-- home section ends -->
-
-<!-- about section start -->
-
-<section class="about" id="about">
-    <div class="images">
-        <img src="{% static 'images/about/about.jpg'%}" alt="">
-    </div>
-
-    <div class="content">
-        <h3>Grill and chill!</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos impedit dolorem, in repellat nihil voluptatum blanditiis illum sequi aliquid nulla deleniti minus odio doloremque doloribus sed mollitia! Blanditiis, magnam. Odio.</p>
-        <a href="#menu" class="btn">Our Menu</a>
 
     </div>
-</section>
+    <!-- home section ends -->
 
-<!-- about section ends -->
+    <!-- about section start -->
 
-<!-- menu section starts -->
-  
-<section class="menu" id="menu">
-
-    <div class="heading">
-        <img src="{% static 'images/menu/menuu.jpg'%}" alt="">
-        <h3>Our Menu</h3>
-    </div>
-
-    <div class="box-container">
-        <div class="box">
-            <a href=""><img src="{% static 'images/menu/Kattiroll.jpg'%}" alt=""></a>
-            <h3>Kattiroll</h3><button>Buy</button> 
-            
-        </div>
-        <div class="box">
-            <img src="{% static 'images/menu/chickenchilly.jpg'%}" alt="">
-            <h3>chicken Chilly</h3>
-        </div>
-        <div class="box">
-            <img src="{% static 'images/menu/pasta.jpg'%}" alt="">
-            <h3>Pasta</h3>
-        </div>
-        <div class="box">
-            <img src="{% static 'images/menu/burger.jpg'%}" alt="">
-            <h3>Burger</h3>
-        </div>
-        <div class="box">
-            <img src="{% static 'images/menu/mutton-curry.jpg'%}" alt="">
-            <h3>Mutton Curry</h3>
-        </div>
-        <div class="box">
-            <img src="{% static 'images/menu/briyani.jpg'%}" alt="">
-            <h3>Briyani</h3>
-        </div>
-        <div class="box">
-            <img src="{% static 'images/menu/pizza.jpg'%}" alt="">
-            <h3>pizza</h3>
-        </div>
-        <div class="box">
-            <img src="{% static 'images/menu/momos.jpg'%}" alt="">
-            <h3>Momos</h3>
-        </div>
-        <div class="box">
-            <img src="{% static 'images/menu/chicken_lollipops.jpg'%}" alt="">
-            <h3>chicken lollipops</h3>
-        </div>
-    </div>
- 
-</section>
-
-<!-- menu section ends -->
-
-<!-- facility section start -->
-
-<section class="facility">
-
-    <div class="heading">
-        <img src="{% static 'images/facility/facilities.jpg'%}" alt="">
-        <h3>Our Facility</h3>
-    </div>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="{% static 'images/facility/deliveryboy.jpg'%}" alt="">
-            <h3><b>Home Delivery</b></h3>
-            <p> After conforming order and payment, we deliver ordered items to the customer's location.</p>
+    <section class="about" id="about">
+        <div class="images">
+            <img src="{% static 'images/about/checking'%}" alt="">
         </div>
 
-        <div class="box">
-            <img src="{% static 'images/facility/online-payment.jpg'%}" alt="">
-            <h3><b>Online Payment</b></h3>
-            <p>Customer can pay through E-Payment.It includes bank transfers, cards, digital wallets, mobile pay.</p>
+        <div class="content">
+            <h3>Grill and chill!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos impedit dolorem, in repellat nihil
+                voluptatum blanditiis illum sequi aliquid nulla deleniti minus odio doloremque doloribus sed mollitia!
+                Blanditiis, magnam. Odio.</p>
+            <a href="#menu" class="btn">Our Menu</a>
+
+        </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts -->
+
+    <section class="menu" id="menu">
+
+        <div class="heading">
+            <img src="{% static 'images/menu/menuu.jpg'%}" alt="">
+            <h3>Our Menu</h3>
         </div>
 
-        <div class="box">
-            <img src="{% static 'images/facility/hygenic.jpg'%}" alt="">
-            <h3><b>Healthy & Hygenic Food</b></h3>
-            <p>We do not compromise with health. Healthy & Hygenic Food are cooked by professional chef.</p>
+        <div class="box-container">
+            <div class="box">
+                <a href=""><img src="{% static 'images/menu/Kattiroll.jpg'%}" alt=""></a>
+                <h3>Kattiroll</h3><button>Buy</button>
+
+            </div>
+            <div class="box">
+                <img src="{% static 'images/menu/chickenchilly.jpg'%}" alt="">
+                <h3>chicken Chilly</h3>
+            </div>
+            <div class="box">
+                <img src="{% static 'images/menu/pasta.jpg'%}" alt="">
+                <h3>Pasta</h3>
+            </div>
+            <div class="box">
+                <img src="{% static 'images/menu/burger.jpg'%}" alt="">
+                <h3>Burger</h3>
+            </div>
+            <div class="box">
+                <img src="{% static 'images/menu/mutton-curry.jpg'%}" alt="">
+                <h3>Mutton Curry</h3>
+            </div>
+            <div class="box">
+                <img src="{% static 'images/menu/briyani.jpg'%}" alt="">
+                <h3>Briyani</h3>
+            </div>
+            <div class="box">
+                <img src="{% static 'images/menu/pizza.jpg'%}" alt="">
+                <h3>pizza</h3>
+            </div>
+            <div class="box">
+                <img src="{% static 'images/menu/momos.jpg'%}" alt="">
+                <h3>Momos</h3>
+            </div>
+            <div class="box">
+                <img src="{% static 'images/menu/chicken_lollipops.jpg'%}" alt="">
+                <h3>chicken lollipops</h3>
+            </div>
         </div>
-    </div>
-</section>
 
-<!-- facility section ends -->
+    </section>
 
+    <!-- menu section ends -->
 
-<section class="footer">
+    <!-- facility section start -->
 
-    <div class="box-container">
+    <section class="facility">
 
-        <div class="box">
-            <i class="fas fa-envelope"></i>
-             <h3>email</h3>
-             <p>singh@gmail.com</p>   
+        <div class="heading">
+            <img src="{% static 'images/facility/facilities.jpg'%}" alt="">
+            <h3>Our Facility</h3>
         </div>
 
-        <div class="box">
-            <i class="fas fa-phone"></i>
-             <h3>Call us</h3>
-             <p>+977 9848514869</p>  
+        <div class="box-container">
+
+            <div class="box">
+                <img src="{% static 'images/facility/deliveryboy.jpg'%}" alt="">
+                <h3><b>Home Delivery</b></h3>
+                <p> After conforming order and payment, we deliver ordered items to the customer's location.</p>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'images/facility/online-payment.jpg'%}" alt="">
+                <h3><b>Online Payment</b></h3>
+                <p>Customer can pay through E-Payment.It includes bank transfers, cards, digital wallets, mobile pay.
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'images/facility/hygenic.jpg'%}" alt="">
+                <h3><b>Healthy & Hygenic Food</b></h3>
+                <p>We do not compromise with health. Healthy & Hygenic Food are cooked by professional chef.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- facility section ends -->
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>email</h3>
+                <p>singh@gmail.com</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>Call us</h3>
+                <p>+977 9848514869</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>Opening hours</h3>
+                <p>09:00am to 8:00pm</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>location</h3>
+                <p>kathmandu,Nepal</p>
+            </div>
+
         </div>
 
-        <div class="box">
-            <i class="fas fa-clock"></i>
-             <h3>Opening hours</h3>
-             <p>09:00am to 8:00pm</p>   
-        </div>
+    </section>
 
-        <div class="box">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>location</h3>
-            <p>kathmandu,Nepal</p>
-        </div>
+    <!-- footer section ends -->
 
-    </div>
-
-</section>
-
-<!-- footer section ends -->
-
-<script src="script.js"></script> 
 </body>
+<!-- <script src="{% static 'js/custom/custom.js' %}"></script> -->
 
-<script src="{% static 'js/custom/custom.js'%}"></script>
 </html>

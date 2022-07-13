@@ -107,7 +107,7 @@ section{
 }
 
 .header .flex .navbar a{
-    margin-left: 2rem;
+    margin-left: 2rem; 
     font-size: 2rem;
     color:var(--black);
 }
@@ -115,6 +115,11 @@ section{
 .header .flex .navbar a:hover{
     text-decoration: underline;
     color: var(--main-color);
+}
+
+.header.flex .dropdown{
+    margin-top: -39px;
+    margin-left: 470px;
 }
 
 #menu-btn{
@@ -157,6 +162,16 @@ section{
     color: var(--black);
     line-height: 2;
 }
+
+
+/* .home-bg .home .img{
+    background-image: url('img_girl.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+
+
 
 .about{
     display: flex;
@@ -292,6 +307,15 @@ section{
 .footer .credit span{
     color: var(--main-color);
 }
+
+/*   */
+
+
+
+
+/* register */
+
+
 
 
 /* media queries */

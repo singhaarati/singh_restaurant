@@ -1,10 +1,37 @@
-<form method="POST" action="">
-    {% csrf_token %}
-firstname: <input type="text" name="firstname"/>
-Lastname: <input type="text" name="lastname"/>
-email: <input type="email" name="email"/>
-username: <input type="text" name="username"/>
-password: <input type="password" name="password"/>
-        
-<input type="submit" value="register"/>
-</form>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registration</title>
+            {% load static %}
+        <link rel="stylesheet" href="{% static 'css/custom/reg.css' %}" />
+
+    </head>
+    <body>
+        <div class="Registerbox">
+            <label>Registration form</label>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div>
+                    <input type="text" name="firstname" Placeholder="First Name">
+                    <input type="text" name="lastname" Placeholder="Last Name">
+                </div>
+                <div>
+                    <input type="text"name="username" placeholder="Username">
+                </div>
+                <div>
+                    <input type="email" name="email"placeholder="Email" >
+                </div>
+                <div>
+                    <input type="password"  name="password"placeholder="Password">
+                </div>                                                  
+                <div>
+                    <input type="submit" value="Register">
+                </div>
+            </div>
+
+            </form>
+     
+
+    </body>
+</html>

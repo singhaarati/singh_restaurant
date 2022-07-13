@@ -1,8 +1,27 @@
-<form action="">
-    {%scrf_token%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>login</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/custom/log.css' %}" />
+    </head>
 
-    username:<input type="text" name="username"/>
-    password:<input type="password" name="password"/>
+    <body>
+        
 
-    <input type="submit" value="login"/>
-</form>
+        <div class="loginbox" action="">
+            <h1>Login</h1>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Username">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="password">
+                <input type="submit" name="" value="Login"><br>
+            </form>
+        </div>
+
+    </body>
+</html>
+
