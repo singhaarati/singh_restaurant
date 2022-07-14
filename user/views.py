@@ -12,7 +12,7 @@ def login_page(request):
         
         if user is not None:
             login(request,user)
-            return redirect("/customer")
+            return redirect("/")
         else:
             return redirect("/user/login")
     else:
@@ -29,7 +29,7 @@ def register_page(request):
             password=request.POST['password'],
         )
 
-        return redirect("/user/login.html")
+        return redirect("/user/login")
         print(request.POST)
     else:
         return render(request, "user/register.html")

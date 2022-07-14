@@ -4,8 +4,5 @@ from django.shortcuts import render
 def index(request):
     return render(request,'home/index.html')
 
-# def about(request):
-#     return render(request,'home/about.html')
-
-def dash(request):
-    return render(request,'dash_layout.html')
+def buy_page(request):
+    return render(request,'home/buy.html')
