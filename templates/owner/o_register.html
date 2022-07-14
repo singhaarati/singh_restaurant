@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Owner Registration</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/custom/o_reg.css' %}" />
+
+</head>
+
+
+<body ng-controller="RegisterCtrl" ng-app="myApp">
+  <div class="container">
+    <div id="signup">
+      <div class="signup-screen">
+        <div class="space-bot text-center">
+          <h1>Sign up</h1>
+          <div class="divider"></div>
+        </div>
+        <form class="form-register" action="" method="POST" name="register" novalidate>
+          {% csrf_token %}
+          <div class="input-field col s6">
+            <input id="firstname" name="firstname" type="text" class="validate" required>
+            <label for="firstname">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="lastname" name="lastname" type="text" class="validate" required>
+            <label for="lastname">Last Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="email"  type="email" name="email" ng-model="email" class="validate" required>
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="password" type="password" name="password" ng-model="password" ng-minlength='6' class="validate"
+              required>
+            <label for="password">Password</label>
+          </div>
+          <div class="space-top text-center">
+            <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">
+              <i class="material-icons left">Register</i> 
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="{% static 'js/custom/o_reg.js' %}"></script>
+
+</html>
