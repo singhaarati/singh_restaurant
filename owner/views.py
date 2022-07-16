@@ -1,5 +1,6 @@
 import email
-from django.shortcuts import render
+from django.contrib.auth.models import User
+from django.shortcuts import redirect,render
 
 import user
 
@@ -8,12 +9,16 @@ def owner_login(request):
     return render(request,'owner/o_login.html')
 
 def owner_register(request):
+    print(request.method)
     if request.method == 'POST':
-        user.objects.create_user(
-            firstname=request.POST['firstname'],
-            lastname=request.POST['lastname'],
+        User.objects.create_user(
+            first_name=request.POST['firstname'],
+            last_name=request.POST['lastname'],
+            username=request.POST['username'],
             email=request.POST['email'],
-            password=request
-
+            password=request.POST['password'],
         )
-    return render(request,'owner/o_register.html')
+        return redirect("/owner/o_login")
+        print(request.POST)
+    else:
+        return render(request,'owner/o_register.html')
