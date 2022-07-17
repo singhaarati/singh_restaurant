@@ -1,58 +1,199 @@
 {% block body%}
-        <div class="col-md-8 order-md-1">
-            <h4 class="mb-3">BILLBOARD</h4>
-            <div class="needs-validation" novalidate>
-                <div class="row">
-                    <form method="POST" action="/" enctype="multipart/form-data">
-                    {% csrf_token %}
-                        <div class="col-md-6 mb-3">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/custom/buy.css' %}" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="title">BILLBOARD</div>
+            <form method="POST" action="/">
+                {% csrf_token %}
+                <div class="input-form">
+                    <div class="section-1">
+
+                        <div class="items">
                             <label for="firstname">First name</label>
-                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="" value="" required>
-
+                            <input type="text" class="input" id="firstname" name="firstname" placeholder="" value=""
+                                required>
                         </div>
-                        <div class="col-md-6 mb-3">
+
+                        <div class="items">
                             <label for="lastname">Last name</label>
-                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="" value="" required>
+                            <input type="text" class="input" id="lastname" name="lastname" placeholder="" value=""
+                                required>
                         </div>
-                    </div>
 
-                    <div class="mb-3">
-                        <label for="username">Username</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>  
+                        <div class="items">
+                            <label for="username">Username</label>
+                            <input type="text" class="input" name="username" id="username" placeholder="Username"
+                                required>
                         </div>
-                    </div>
 
-                    <div class="mb-3">
-                        <label for="email">Email <span class="text-muted"></span></label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="enter your email">
-                    </div>
+                        <div class="items">
+                            <label for="email">Email</label>
+                            <input type="email" class="input" id="email" name="email" placeholder="enter your email">
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="mobile">Mobile<span class="text-muted"></span></label>
-                        <input type="number" class="form-control" id="mobile" name="mobile" placeholder="enter your mobile number">
-                    </div>
+                        <div class="items">
+                            <label for="mobile">Mobile</label>
+                            <input type="number" class="input" id="mobile" name="mobile"
+                                placeholder="enter your mobile number">
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="address">Address <span class="text-muted"></span></label>
-                        <input type="text" class="form-control" id="address" name="address" placeholder="enter your location">
-                    </div>
+                        <div class="items">
+                            <label for="address">Address</label>
+                            <input type="text" class="input" id="address" name="address"
+                                placeholder="enter your location">
+                        </div>
 
-                    <div class="row">
-                        
-                        <div class="col-md-3 mb-3">
+                        <div class="items">
                             <label for="zipcode">Zip Code</label>
-                            <input type="text" class="form-control" name="zipcode" id="zip" placeholder="" required>
-                            
+                            <input type="text" class="input" name="zipcode" id="zip" placeholder="" required>
                         </div>
-                    </div>
 
-                    <hr class="mb-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="submit"><b>checkout</b></button>
-                    </form>
+                        <hr class="irems">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit"><b>Buy</b></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- <div class="items">
+                        <label class="label">card number</label>
+                        <input type="text" class="input" maxlength="16" data-mask="0000 0000 0000 0000"
+                            placeholder="1234 1234 1234 1234">
+                    </div>
+                </div>
+                <div class="section-2">
+                    <div class="items">
+                        <label class="label">card holder</label>
+                        <input type="text" class="input" placeholder="Coding Market">
+                    </div>
+                </div>
+                <div class="section-3">
+                    <div class="items">
+                        <label class="label">Expire date</label>
+                        <input type="text" class="input" data-mask="00 / 00" placeholder="MM / YY">
+                    </div>
+                    <div class="items">
+                        <div class="cvc">
+                            <label class="label">cvc code</label>
+                            <div class="tooltip">?
+                                <div class="cvc-img"><img src="https://i.imgur.com/r8oXtry.png" alt=""></div>
+                            </div>
+                        </div>
+                        <input type="text" class="input" data-mask="0000" placeholder="0000">
+                    </div>
+                </div>
             </div>
+
+            <div class="btn">proceed</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">BILLBOARD</h4>
+        <div class="needs-validation" novalidate>
+            <div class="row">
+                <form method="POST" action="/" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="col-md-6 mb-3">
+                        <label for="firstname">First name</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="" value=""
+                            required>
+
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastname">Last name</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="" value=""
+                            required>
+                    </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="username">Username</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Username"
+                        required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Email <span class="text-muted"></span></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="enter your email">
+            </div>
+
+            <div class="mb-3">
+                <label for="mobile">Mobile<span class="text-muted"></span></label>
+                <input type="number" class="form-control" id="mobile" name="mobile"
+                    placeholder="enter your mobile number">
+            </div>
+
+            <div class="mb-3">
+                <label for="address">Address <span class="text-muted"></span></label>
+                <input type="text" class="form-control" id="address" name="address" placeholder="enter your location">
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3 mb-3">
+                    <label for="zipcode">Zip Code</label>
+                    <input type="text" class="form-control" name="zipcode" id="zip" placeholder="" required>
+
+                </div>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit"><b>checkout</b></button>
+            </form>
         </div>
     </div>
+    </div>
+</body>
+
+</html> -->
 
 
 {%endblock%}
