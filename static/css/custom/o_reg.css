@@ -15,8 +15,6 @@ body {
   margin-top: 35px;
 }
 
-/* Title */
-
 h1 {
     color: white;
     font-family: 'Roboto';
@@ -25,8 +23,6 @@ h1 {
     font-size: 25px;
     text-align: center;
 }
-
-/* Sign Up */
 
 .container {
     max-width: 400px;
@@ -85,7 +81,6 @@ h1 {
     border-radius: 3px;
 }
 
-/* Error Box */
 
 .alert{
   padding: 15px;

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/custom/customer.css' %}" />
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <th>firstname</th>
+        <th>lastname</th>
+        <th>username</th>
+        <th>email</th>
+        <th>mobile</th>
+        <th>address</th>
+        <th>zipcode</th>
+        <th>action</th>
+    </tr>
+
+    {% for c in customer %}
+
+    <tr>
+        <td>{{c.firstname}}</td>
+        <td>{{c.lastname}}</td>
+        <td>{{c.username}}</td>
+        <td>{{c.email}}</td>
+        <td>{{c.mobile}}</td>
+        <td>{{c.address}}</td>
+        <td>{{c.zipcode}}</td>
+
+         <td>
+            <a href="/customer/edit/{{c.id}}">edit</a>
+            <a href="/customer/delete/{{c.id}}">delete</a>
+        </td>
+    </tr>    
+    {% endfor %}    
+</table>
+
+</body>
+
+
+<script src="{% static 'js/custom/customer.js' %}"></script>
+
+</html>
+
+
+
+
+
+
