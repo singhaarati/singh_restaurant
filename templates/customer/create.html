@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/custom/customer.css' %}" />
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<form action="/customer/save" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    customer firstname:<input type="text" name="firstname" value="{{ data.customer_firstname }}" />
+    customer lastname:<input type="text" name="lastname" value="{{ data.customer_lastname }}" />
+    customer username:<input type="text" name="username" value="{{ data.customer_username }}" />
+    customer email:<input type="text" name="email" value="{{ data.customer_email }}" />
+    customer mobile:<input type="text" name="mobile" value="{{ data.customer_mobile }}" />
+    customer address:<input type="text" name="address" value="{{ data.customer_address }}"/>
+    customer zipcode:<input type="text" name="zipcode" value="{{ data.customer_zipcode }}" />
+    <input type="submit" value="save"/>
+</form>
+</body>
+
+
+<script src="{% static 'js/custom/customer.js' %}"></script>
+
+</html>
