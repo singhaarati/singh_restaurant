@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Owner Page</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/custom/o_reg.css' %}" />
+
+</head>
+
+
+<body ng-controller="RegisterCtrl" ng-app="myApp">
+  <div class="container">
+    <div id="signup">
+      <div class="signup-screen">
+        <div class="space-bot text-center">
+          <h1>Create Item</h1>
+          <div class="divider"></div>
+        </div>
+        <form c lass="form-register" action="/owner/save" method="POST" enctype="multipart/form-data" novalidate>
+          {% csrf_token %}
+          <div class="input-field col s6">
+            <input id="itemname" name="itemname" type="text" class="validate" required>
+            <label for="firstname">Item Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="itemprice" name="itemprice" type="text" class="validate" required>
+            <label for="lastname">Item Price</label>
+          </div>
+
+          <div class="input-field col s6">
+            <input id="image" name="image" type="file" class="validate" required>
+            <label for="lastname">Image</label>
+          </div>
+          <input type="submit" value="save"/>
+          
+          <!-- <div class="space-top text-center">
+            <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">
+              <i class="material-icons left">Create Item</i> 
+            </button>
+          </div> -->
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="{% static 'js/custom/o_reg.js' %}"></script>
+
+</html>
