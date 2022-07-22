@@ -1,6 +1,7 @@
 import email
 from django.contrib.auth.models import User
 from django.shortcuts import redirect,render
+from django.contrib.auth import authenticate,login
 import owner
 from owner.models import Owner
 from owner.form import OwnerForms
@@ -13,7 +14,18 @@ def index(request):
     return render(request,"owner/owner.html",{'owner': owner})
 
 def owner_login(request):
-    return render(request,'owner/o_login.html')
+    if request.method == "POST":
+        user= authenticate(request,
+        username=request.POST['username'],
+        password=request.POST['password'])
+        
+        if user is not None:
+            login(request,user)
+            return redirect("/")
+        else:
+            return redirect("/owner/o_login")
+    else:    
+            return render(request,'owner/o_login.html')
 
 def owner_register(request):
     print(request.method)
@@ -33,12 +45,11 @@ def owner_register(request):
 def owner_post(request):
     return render(request,'owner/owner.html')
 
-# def create(request):
-#     return render(request,"owner/owner.html")
 
 def save(request):
     print(request.FILES)
-    form=OwnerForms(request.POST,request.FILES)
+    form=OwnerForms(request.POST,)
     form.save()
 
     return redirect("/owner")
+

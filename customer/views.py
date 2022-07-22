@@ -15,13 +15,9 @@ def create(request):
 
 def saveFn(request):
     print(request.FILES)
-    # print(request.method)
-    # print(request.POST)
     form=CustomerForms(request.POST,request.FILES)
-    # print(data)
     form.save()
-    # data.save()
-    # return render(request, "customer/create.html")
+
     return  redirect("/customer")
 
 def edit(request,id):
