@@ -1,3 +1,4 @@
+{% block body%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,24 +8,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/custom/customer.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/custom/buy.css' %}" />
     <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<form action="/customer/save" method="POST" enctype="multipart/form-data">
-    {% csrf_token %}
-    customer firstname:<input type="text" name="firstname" value="{{ data.customer_firstname }}" />
-    customer lastname:<input type="text" name="lastname" value="{{ data.customer_lastname }}" />
-    customer username:<input type="text" name="username" value="{{ data.customer_username }}" />
-    customer email:<input type="text" name="email" value="{{ data.customer_email }}" />
-    customer mobile:<input type="text" name="mobile" value="{{ data.customer_mobile }}" />
-    customer address:<input type="text" name="address" value="{{ data.customer_address }}"/>
-    customer zipcode:<input type="text" name="zipcode" value="{{ data.customer_zipcode }}" />
-    <input type="submit" value="save"/>
-</form>
+    <div class="wrapper">
+        <div class="container">
+            <div class="title">BILLBOARD</div>
+            <form action="/customer/save" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="input-form">
+                <div class="section-1">
+
+                    <div class="items">
+                        <label for="firstname">First name</label>
+                        <input type="text" class="input" id="firstname" name="firstname" placeholder="" value="{{ data.firstname }}"
+                                required>
+                    </div>
+                    <div class="items">
+                        <label for="lastname">Last name</label>
+                        <input type="text" class="input" id="lastname" name="lastname" placeholder="" value="{{ data.lastname }}"
+                                required>
+                    </div>
+                    <div class="items">
+                        <label for="username">username</label>
+                        <input type="text" class="input" id="username" name="username" placeholder="Username" value="{{ data.username }}"
+                                required>
+                    </div>
+                    <div class="items">
+                        <label for="email">email</label>
+                        <input type="text" class="input" id="email" name="email" placeholder="enter your email" value="{{ data.email }}"
+                                required>
+                    </div>
+                    <div class="items">
+                        <label for="mobile">mobile</label>
+                        <input type="text" class="input" id="mobile" name="mobile" placeholder="enter your mobile number" value="{{ data.mobile }}"
+                                required>
+                    </div>
+                    <div class="items">
+                        <label for="address">address</label>
+                        <input type="text" class="input" id="address" name="address" placeholder="enter your location" value="{{ data.address }}"
+                                required>
+                    </div>
+                    <div class="items">
+                        <label for="zipcode">zipcode</label>
+                        <input type="text" class="input" id="zipcode" name="zipcode" placeholder="" value="{{ data.zipcode }}"
+                                required>
+                    </div>
+                    <hr class="items">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" value="update"><b>Buy</b></button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 
-<script src="{% static 'js/custom/customer.js' %}"></script>
+<script src="{% static 'js/custom/buy.js' %}"></script>
 
 </html>
+{%endblock%}
