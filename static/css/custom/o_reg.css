@@ -2,19 +2,15 @@ body {
     min-height:100%;
     background-color: #2F4F4F;
 }
-
 .text-center{
   text-align: center;
 }
-
 .space-bot{
   margin-bottom: 35px;
 }
-
 .space-top{
   margin-top: 35px;
 }
-
 h1 {
     color: white;
     font-family: 'Roboto';
@@ -23,18 +19,15 @@ h1 {
     font-size: 25px;
     text-align: center;
 }
-
 .container {
     max-width: 400px;
     max-height: 100px;
     margin-top: 10px;
     padding-left: 375px;
 }
-
 .alert-danger{
 	text-align: center;
 }
-
 .signup-screen {
 	  padding: 20px;
     padding-bottom: 40px;
@@ -43,45 +36,34 @@ h1 {
     box-shadow: 0 1px 6px rgba(0,0,0,.3);
     color: white;
 }
-
 .btn{
   border-radius: 2px;
 }
-
 .cancel{
   background-color: #df405a;
 }
-
 .done{
   background-color: #87CEEB;
 }
-
 .done:hover{
   background-color: #6dc793;
 }
-
 .done:focus{
   background-color: #6dc793;
 }
-
 .cancel:hover{
   background-color: #f0435f;
 }
-
 .cancel:focus{
   background-color: #f0435f;
 }
-
 .input-group {
     width:100%;
 }
-
 .input-group .ng-invalid {
     border: 2px solid #e74c3c;
     border-radius: 3px;
 }
-
-
 .alert{
   padding: 15px;
   margin-bottom: 20px;
@@ -89,10 +71,8 @@ h1 {
   border-radius: 2px;
   border-color: #e85a71;
   background-color:  #e85a71;
-  color: white;
-  
+  color: white; 
 }
-
 .help-block {
     font-size: 12px;
     color: white

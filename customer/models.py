@@ -13,4 +13,4 @@ class Customer(models.Model):
     # image=models.FileField(upload_to='static/images/customer', default='default.jpg')
 
     class Meta:
-        db_table="customer"
+        db_table="customer" 

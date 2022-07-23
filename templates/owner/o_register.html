@@ -6,10 +6,7 @@
   <title> Owner Registration</title>
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/custom/o_reg.css' %}" />
-
 </head>
-
-
 <body ng-controller="RegisterCtrl" ng-app="myApp">
   <div class="container">
     <div id="signup">
@@ -29,7 +26,7 @@
             <label for="lastname">Last Name</label>
           </div>
           <div class="input-field col s6">
-            <input id="username" name="username" type="text" class="validate" required>
+            <input id="username" name="name" type="text" class="validate" required>
             <label for="username">Username</label>
           </div>
           <div class="input-field col s6">
@@ -37,7 +34,7 @@
             <label for="email">Email</label>
           </div>
           <div class="input-field col s6">
-            <input id="password" name="password" type="text" ng-model="password" ng-minlength='6' class="validate"
+            <input id="password" name="password" type="password" ng-model="password" ng-minlength='6' class="validate"
               required>
             <label for="password">Password</label>
           </div>
@@ -52,5 +49,4 @@
   </div>
 </body>
 <script src="{% static 'js/custom/o_reg.js' %}"></script>
-
 </html>

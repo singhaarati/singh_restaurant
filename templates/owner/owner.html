@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Owner Page</title>
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/custom/o_reg.css' %}" />
-
 </head>
-
-
 <body ng-controller="RegisterCtrl" ng-app="myApp">
   <div class="container">
     <div id="signup">
@@ -33,13 +29,11 @@
             <input id="image" name="image" type="file" class="validate" required>
             <label for="lastname">Image</label>
           </div>
-          <input type="submit" value="save"/>
-          
+          <input type="submit" value="save"/>         
         </form>
       </div>
     </div>
   </div>
 </body>
 <script src="{% static 'js/custom/o_reg.js' %}"></script>
-
 </html>

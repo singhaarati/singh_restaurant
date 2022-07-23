@@ -17,8 +17,6 @@
             <a href="#home" class="logo"><img src="{% static 'images/Logo/website_logo.jpg'%}" alt=""></a>
             <nav class="navbar">
                 <a href="#home">Home</a>
-                <!-- <a href="#home">About Us</a>
-                <a href="#home">Menu</a> -->
             </nav>
 
             <div class="dropdown">
@@ -36,7 +34,7 @@
 
     </header>
 
-    <!-- home section start -->
+    <!-- home start -->
 
     <div class="home-bg">
         <section class="home" id="home">
@@ -50,9 +48,9 @@
         </section>
 
     </div>
-    <!-- home section ends -->
+    <!-- home ends -->
 
-    <!-- about section start -->
+    <!-- about start -->
 
     <section class="about" id="about">
         <div class="images">
@@ -61,80 +59,84 @@
 
         <div class="content">
             <h3>Grill and chill!</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos impedit dolorem, in repellat nihil
-                voluptatum blanditiis illum sequi aliquid nulla deleniti minus odio doloremque doloribus sed mollitia!
-                Blanditiis, magnam. Odio.</p>
+            <p>“Find what’s hot, find what’s just opened and then look for the worst review of the week. 
+                There is so much to learn from watching a restaurant getting absolutely panned and having a 
+                bad experience. Go and see it for yourself.”</p>
             <a href="#menu" class="btn">Our Menu</a>
 
         </div>
     </section>
 
-    <!-- about section ends -->
+    <!-- about ends -->
 
-    <!-- menu section starts -->
+    <!-- menu  starts -->
 
     <section class="menu" id="menu">
-
         <div class="heading">
             <img src="{% static 'images/menu/menuu.jpg'%}" alt="">
             <h3>Our Menu</h3>
         </div>
-
         <div class="box-container">
             <div class="box">
                 <a href=""><img src="{% static 'images/menu/Kattiroll.jpg'%}" alt=""></a>
                 <h3>Kattiroll</h3>
+                <div class="price"><span>Rs 250</span></div>
                 <a href="{% url 'buy_product'%}"><button class="btn btn-primary d-block">Buy</button></a>
-
-            </div>
-            
+            </div>           
             <div class="box">
                 <img src="{% static 'images/menu/chickenchilly.jpg'%}" alt="">
                 <h3>chicken Chilly</h3>
+                <div class="price"><span>Rs 350</span></div>
                 <a href="{% url 'buy_product'%}"><button class="btn btn-primary d-block">Buy</button></a>
             </div>
             <div class="box">
                 <img src="{% static 'images/menu/pasta.jpg'%}" alt="">
                 <h3>Pasta</h3>
+                <div class="price"><span>Rs 300</span></div>
                 <a href="{% url 'buy_product'%}"><button class="btn btn-primary d-block">Buy</button></a>
             </div>
             <div class="box">
                 <img src="{% static 'images/menu/burger.jpg'%}" alt="">
                 <h3>Burger</h3>
+                <div class="price"><span>Rs 190</span></div>
                 <a href="{% url 'buy_product'%}"><button class="btn btn-primary d-block">Buy</button></a>
             </div>
             <div class="box">
                 <img src="{% static 'images/menu/mutton-curry.jpg'%}" alt="">
                 <h3>Mutton Curry</h3>
+                <div class="price"><span>Rs 450</span></div>
                 <a href="{% url 'buy_product'%}"><button class="btn btn-primary d-block">Buy</button></a>
             </div>
             <div class="box">
                 <img src="{% static 'images/menu/briyani.jpg'%}" alt="">
                 <h3>Briyani</h3>
+                <div class="price"><span>Rs 650</span></div>
                 <a href="{% url 'buy_product'%}"><button class="btn btn-primary d-block">Buy</button></a>
             </div>
             <div class="box">
                 <img src="{% static 'images/menu/pizza.jpg'%}" alt="">
                 <h3>pizza</h3>
+                <div class="price"><span>Rs 500</span></div>
                 <a href="{% url 'buy_product'%}"><button class="btn btn-primary d-block">Buy</button></a>
             </div>
             <div class="box">
                 <img src="{% static 'images/menu/momos.jpg'%}" alt="">
                 <h3>Momos</h3>
+                <div class="price"><span>Rs 200</span></div>
                 <a href="{% url 'buy_product'%}"><button class="btn btn-primary d-block">Buy</button></a>
             </div>
             <div class="box">
                 <img src="{% static 'images/menu/chicken_lollipops.jpg'%}" alt="">
                 <h3>chicken lollipops</h3>
+                <div class="price"><span>Rs 550</span></div>
                 <a href="{% url 'buy_product'%}"><button class="btn btn-primary d-block">Buy</button></a>
             </div>
         </div>
-
     </section>
 
-    <!-- menu section ends -->
+    <!-- menu ends -->
 
-    <!-- facility section start -->
+    <!-- facility start -->
 
     <section class="facility">
 
@@ -166,7 +168,7 @@
         </div>
     </section>
 
-    <!-- facility section ends -->
+    <!-- facility  ends -->
 
 
     <section class="footer">
@@ -201,7 +203,7 @@
 
     </section>
 
-    <!-- footer section ends -->
+    <!-- footer  ends -->
 
 </body>
 <script src="{% static 'js/custom/custom.js' %}"></script>

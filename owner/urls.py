@@ -6,6 +6,7 @@ urlpatterns = [
     path("o_register/",views.owner_register),
     path("",views.index),
     path("o_post/",views.owner_post),
-    path("save",views.save, name="owner_save")
+    path("save",views.save, name="owner_save"),
+    # path("/ ",views.owner_post)
 ]
 

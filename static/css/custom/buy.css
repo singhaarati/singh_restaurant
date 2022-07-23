@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@
   outline: none;
   font-family: 'Open Sans', sans-serif;
 }
-
 body{
   background: url("https://i.imgur.com/LAfQyOR.jpg") no-repeat top center;
   background-size: cover;
@@ -15,12 +13,10 @@ body{
   height: 100vh;
   font-size: 16px;
 }
-
 .wrapper{
   width: 100%;
   padding: 10px;
 }
-
 .container{
   max-width: 500px;
   height: auto;
@@ -31,7 +27,6 @@ body{
   border-bottom-right-radius: 5px;
   border-top: 7px solid #5f6c7d;
 }
-
 .title{
   color: #5f6c7d;
   font-size: 2em;
@@ -40,11 +35,9 @@ body{
   font-weight: 900;
   margin-bottom: 20px;
 }
-
 .input-form{
   margin-bottom: 20px;
 }
-
 .input-form .label{
 	display: block;
     font-size: 1em;
@@ -52,11 +45,9 @@ body{
     text-transform: capitalize;
     margin-bottom: 8px;
 }
-
 .input-form .items{
   margin-bottom: 20px;
 }
-
 .section-1 .items .input,
 .section-2 .items .input,
 .section-3 .items .input{
@@ -68,16 +59,13 @@ body{
     color: #212121;
     border-radius: 3px;
 }
-
 .input-form .section-3{
   display: flex;
   justify-content: space-between;
 }
-
 .input-form .section-3 .items{
    width: 48%;
 }
-
 .btn{
 	background: #5f6c7d;
 	color: #fff;
@@ -90,14 +78,12 @@ body{
 	font-weight: bold;
 	letter-spacing: 2px;
 }
-
 .cvc{
   display: flex;
   justify-content: space-between;
   position: relative;
   transition: all 0.3s ease;
 }
-
 .cvc .tooltip{
   color: #d4d4d4;
   border: 2px solid #d4d4d4;
@@ -107,7 +93,6 @@ body{
   text-align:center;
   cursor: pointer;
 }
-
 .cvc .cvc-img{
   position: absolute;
   top: -300%;
@@ -117,13 +102,11 @@ body{
   border-radius: 5px;
   display: none;
 }
-
 .cvc .cvc-img img{
   width: 100px;
   height: auto;
   display: block;
 }
-
 .cvc:hover .cvc-img{
   display: block;
 }

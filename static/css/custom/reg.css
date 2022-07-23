@@ -5,7 +5,6 @@ body{
     font-family: sans-serif;
     background-position: center;
     background-size: cover;
-
 }
 .Registerbox{
     width: 320px;
@@ -20,16 +19,12 @@ body{
     padding: 70px 30px;
     border-top: 5px solid orange;
     box-shadow: 0 0 20px 0px orangered;
-
-
 }
 label{
     margin: 0;
     padding: 20px;
     text-align: center;
     font-size: 22px;
-
-
 }
 .Registerbox input[type="text"], input[type="password"], input[type="email"]{
     border: none;

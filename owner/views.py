@@ -17,11 +17,11 @@ def owner_login(request):
     if request.method == "POST":
         user= authenticate(request,
         username=request.POST['username'],
-        password=request.POST['password'])
-        
+        password=request.POST['userpassword'])
+        # owner=Owner.objects.get(username="username", password="userpassword")
         if user is not None:
             login(request,user)
-            return redirect("/")
+            return redirect("/owner/o_post")
         else:
             return redirect("/owner/o_login")
     else:    

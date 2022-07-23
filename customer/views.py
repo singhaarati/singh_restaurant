@@ -25,8 +25,6 @@ def edit(request,id):
     data=Customer.objects.get(id=id)
     return render(request,"customer/edit.html",{'data':data})
 
-
-
 def update(request,id):
     data=Customer.objects.get(id=id)
     form=CustomerForms(request.POST,request.FILES, instance=data)

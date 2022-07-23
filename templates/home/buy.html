@@ -1,16 +1,13 @@
 {% block body%}
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>login</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/custom/buy.css' %}" />
 </head>
-
 <body>
-
     <div class="wrapper">
         <div class="container">
             <div class="title">BILLBOARD</div>
@@ -18,7 +15,6 @@
                 {% csrf_token %}              
                 <div class="input-form">
                     <div class="section-1">
-
                         <div class="items">
                             <label for="firstname">First name</label>
                             <input type="text" class="input" id="firstname" name="firstname" placeholder="" value="{{ data.firstname }}"
@@ -58,11 +54,8 @@
                 </div>
             </form>
         </div>
-
     </div>
 </body>
 <script src="{% static 'js/custom/buy.js' %}"></script>
-
 </html>
-
 {%endblock%}
